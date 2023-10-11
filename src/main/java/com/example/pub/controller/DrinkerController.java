@@ -39,11 +39,11 @@ public class DrinkerController {
         return drinkerService.saveDrinker(drinker);
     }
 
-
+/*
    @PutMapping("/drinker/{id}")
     Drinker replaceDrinker(@RequestBody DrinkerDTO newDrinker, @PathVariable Long id){
 
-       /* return repository.findById(id)
+        return repository.findById(id)
                 .map(drinker -> {
                     drinker.setName(newDrinker.getName());
                     drinker.setDocument(newDrinker.getDocument());
@@ -58,8 +58,6 @@ public class DrinkerController {
                     newDrinker.setId(id);
                     return repository.save(newDrinker);
                 });
+
     }*/
-
-      
-
 }
