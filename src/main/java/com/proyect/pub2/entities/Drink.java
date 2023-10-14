@@ -5,7 +5,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @AllArgsConstructor
@@ -13,18 +16,13 @@ import lombok.*;
 @Setter
 @Getter
 
-@Table(name = "Drinkers")
-public class Drinker {
+@Table(name = "Drinks")
+public class Drink {
 
     @Id
     @GeneratedValue
     private Long id;
     private String name;
-    private String document;
-    private String drink;
-    private Integer costDrink;
-    private String offer;
-    private Integer costOffer;
-    private Integer total;
-
+    private Integer price;
+    private Boolean availability;
 }

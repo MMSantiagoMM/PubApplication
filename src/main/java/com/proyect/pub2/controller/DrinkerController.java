@@ -7,7 +7,6 @@ import com.proyect.pub2.repository.DrinkerRepository;
 import com.proyect.pub2.service.DrinkerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -25,17 +24,17 @@ public class DrinkerController {
     }
 
     @GetMapping("/drinkers")
-    List<Drinker> all(){return repository.findAll();}
+    private List<Drinker> all(){return repository.findAll();}
 
     @GetMapping("/drinker/{id}")
-    Drinker one (@PathVariable Long id){
+    private Drinker one (@PathVariable Long id){
         return repository.findById(id)
                 .orElseThrow(()->new DrinkerNotFoundException(id));
     }
 
 
     @PostMapping("/drinkers")
-    DrinkerDTO newDrinker(@RequestBody DrinkerDTO drinker){
+    private DrinkerDTO newDrinker(@RequestBody DrinkerDTO drinker){
         return drinkerService.saveDrinker(drinker);
     }
 
