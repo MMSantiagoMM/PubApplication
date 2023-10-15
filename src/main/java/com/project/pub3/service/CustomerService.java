@@ -21,7 +21,7 @@ public class CustomerService {
         Costumer costumer = new Costumer();
 
         costumer.setName(customerModel.getName());
-        costumer.setTelephone(costumer.getTelephone());
+        costumer.setTelephone(customerModel.getTelephone());
         costumer.setDrinks(customerModel.getDrinks());
 
         costumer.setTotalPrice(customerModel.getTotalPrice());
