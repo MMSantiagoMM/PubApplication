@@ -3,9 +3,6 @@ package com.proyect.pub2.service;
 import com.proyect.pub2.entities.Drinker;
 import com.proyect.pub2.model.DrinkerDTO;
 import com.proyect.pub2.repository.DrinkerRepository;
-import com.proyect.pub2.entities.Drinker;
-import com.proyect.pub2.model.DrinkerDTO;
-import com.proyect.pub2.repository.DrinkerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

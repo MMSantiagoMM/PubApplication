@@ -4,7 +4,9 @@ import com.proyect.pub2.entities.Drink;
 import com.proyect.pub2.model.DrinkDTO;
 import com.proyect.pub2.repository.DrinkRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class DrinkService {
 
     @Autowired
