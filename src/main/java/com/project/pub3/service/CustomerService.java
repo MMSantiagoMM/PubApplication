@@ -5,6 +5,8 @@ import com.project.pub3.models.CustomerModel;
 import com.project.pub3.repository.CustomerRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.Random;
+
 @Service
 public class CustomerService {
 
@@ -23,7 +25,7 @@ public class CustomerService {
         costumer.setDrinks(customerModel.getDrinks());
 
         costumer.setTotalPrice(customerModel.getTotalPrice());
-        costumer.setId(customerModel.getId());
+        costumer.setId(new Random().nextLong());
         customerRepository.save(costumer);
 
 
